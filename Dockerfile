@@ -1,5 +1,5 @@
 FROM ruby:2.3.1-alpine 
-MAINTAINER Mikromike <tech,mikromike@gmail.com>
+MAINTAINER Mikromike <dev.mikromika@gmail.com>
 
 ADD Gemfile /app/  
 ADD Gemfile.lock /app/  
