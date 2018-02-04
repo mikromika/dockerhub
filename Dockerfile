@@ -3,7 +3,7 @@ MAINTAINER Mikromike <dev.mikromika@gmail.com>
 
 ADD Gemfile /app/  
 ADD Gemfile.lock /app/  
-RUN apk --update add --virtual build-dependencies ruby-dev build-base bash && \  
+RUN apk --update add --virtual build-dependencies ruby-dev build-base bash sudo && \  
     gem install bundler --no-ri --no-rdoc && \
     cd /app ; bundle install --without development test && \
     apk del build-dependencies
